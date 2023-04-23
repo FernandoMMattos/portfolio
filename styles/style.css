@@ -105,10 +105,19 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
+    align-items: center;
 
 }
 
-.presentation__links__link:hover {
+.fa-brands{
+    color: var(--color-terciary);
+}
+
+.fa-images{
+    color: var(--color-terciary);
+}
+
+.presentation__links__nav:hover {
     background-color: var(--hover);
 }
 
