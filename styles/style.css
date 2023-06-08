@@ -61,6 +61,7 @@ body {
     gap: 40px;
 }
 
+
 .presentation__text__title {
     font-family: var(--font-krona-one);
     font-size: 2.25rem;
