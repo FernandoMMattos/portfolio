@@ -28,20 +28,6 @@ body {
     transition: background 0.2s linear;
 }
 
-.change-theme{
-    position: absolute;
-    top: 4%;
-    left: 2%;
-    background-image: var(--label-icon); 
-    background-repeat: no-repeat;
-    padding: 67px;
-    cursor: pointer; 
-}
-
-#btn {
-    display: none;
-  }
-
 .dark-mode{
     --color-primary: #222831;
     --color-secundary: #EEEEEE;
@@ -50,12 +36,45 @@ body {
     --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
 }
 
+.checkbox{
+    display: none;
+}
+
+.change-theme{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 2px solid gray;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#switch-button:checked ~ label > .fa-sun{
+    opacity: 0;
+    transform: translateX(0px);
+}
+
+#switch-button:checked ~ label > .fa-moon{
+    opacity: 1;
+    transform: translateX(-30px);
+}
+
 .fa-moon{
-    color: #f1c40f;
+    color: white;
+    font-size: 25px;
+    text-shadow: 0 0 10px white;
+    transform: translateX(0px);
+    opacity: 0;
+    transition: .3s;
 }
 
 .fa-sun{
-    color: #f39c12
+    color: orange;
+    font-size: 25px;
+    text-shadow: 0 0 10px orange;
+    transform: translateX(25px);
+    transition: .3s;
 }
 
 .blue {
