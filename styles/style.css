@@ -196,7 +196,39 @@ body {
         padding: 10%;
     }
 
-    .header__menu {
+    .change-theme {
+        margin-top: 1.688rem;
+        border: 0;
+    }
+
+    #switch-button:checked ~ label > .fa-sun{
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    
+    #switch-button:checked ~ label > .fa-moon{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+    .fa-moon{
+        color: white;
+        font-size: 25px;
+        text-shadow: 0 0 10px white;
+        transform: translateX(25px);
+        opacity: 0;
+        transition: .3s;
+    }
+    
+    .fa-sun{
+        color: orange;
+        font-size: 25px;
+        text-shadow: 0 0 10px orange;
+        transform: translateX(25px);
+        transition: .3s;
+    }
+
+    .header__menu{
         justify-content: center;
     }
 
@@ -220,5 +252,7 @@ body {
     .logos {
         width: auto;
     }
+
+
 
 }
